@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <h1>Hello, I'm <span class="highlight">Kelli Kodhanda Rao</span></h1>
+        <p><span class="highlight">Web Developer</span> | Designer | Programmer</p>
+        <img src="C:\Users\kodha\Desktop\MY PIC1.jpg" alt="My Photo" class="profile-pic">
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2 class="highlight">About Me</h2>
+        <p>Passionate web developer with 1 year of experience in creating dynamic and responsive websites. My journey started with...</p>
+        <h3>Education</h3>
+        <p>Bachelor's Degree in Computer Science from KLH University</p>
+        <h3>Professional Experience</h3>
+        <ul>
+            <li>Web Developer at PRODIGY INFOTECH Company (jun 2024 - on going)</li>
+            <li>Front-End Developer at PRODIGY INFOTECH Company (2024 - on going)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="highlight">Projects</h2>
+        <div class="project">
+            <h3>STOP WATCH web application</h3>
+            <p>Developed a dynamic and user-friendly stopwatch web application utilizing HTML, CSS, and JavaScript. The application features start, pause, and reset functions, along with the ability to track and display lap times. Implemented intuitive user interface design principles to enhance usability and ensure accurate time measurement and recording. This project demonstrates proficiency in front-end web development and a strong understanding of interactive web application design.
+
+            </p>
+            <a href="file:///C:/Users/kodha/Desktop/INTERNSHIP/PRODIGY-WD-02/index.html" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>TIC-TAC-TOE Web application</h3>
+            <p>Created an interactive tic-tac-toe web application using HTML, CSS, and JavaScript. Implemented functionalities to handle user interactions, maintain game state, and determine winning conditions. The application allows users to play against each other or an AI opponent, providing an engaging gaming experience. Demonstrated strong front-end development skills and an understanding of game logic and user interface design.
+
+            </p>
+            <a href="file:///C:/Users/kodha/Desktop/INTERNSHIP/PRODIGY-WD-03/index.html" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="highlight">Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React, Vue.js, Angular</li>
+            <li>Node.js, Express.js</li>
+            <li>SQL, NoSQL</li>
+            <li>Git, GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="highlight">Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

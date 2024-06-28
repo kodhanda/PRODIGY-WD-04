@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #2c3e50; /* Deep dark blue background */
+}
+
+header {
+    background: #34495e; /* Slightly lighter dark blue */
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.section {
+    display: none;
+    padding: 2em;
+    max-width: 800px;
+    margin: 6em auto 2em auto;
+    background-color: #ecf0f1; /* Light grey background */
+    color: #201f1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s;
+}
+
+.section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.highlight {
+    color: #e72222; /* Highlight color for important text */
+    font-weight: bold;
+    
+}
+
+#home {
+    text-align: center;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    padding: 3em 2em;
+    border-radius: 15px;
+}
+
+#home img {
+    max-width: 150px;
+    border-radius: 10px; /* Round corner box shape */
+    margin-top: 1em;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a nicer look */
+}
+
+#about {
+    background: linear-gradient(to right, #84a0ce, #52a8d0);
+    border-radius: 15px;
+}
+
+#projects {
+    background: linear-gradient(to right, #ace862, #dce5c2);
+    border-radius: 15px;
+}
+
+#skills {
+    background: linear-gradient(to right, #969595, #282726);
+    border-radius: 15px;
+}
+
+#contact {
+    background: linear-gradient(to right, #b8aadb, #d97fc0);
+    border-radius: 15px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    transition: box-shadow 0.3s;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea, form button {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #e74c3c; /* Highlight color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #c0392b; /* Darker highlight color */
+}
